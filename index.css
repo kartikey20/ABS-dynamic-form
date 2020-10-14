@@ -12,7 +12,7 @@ body {
   margin: 100px auto;
   font-family: Raleway;
   padding: 40px;
-  width: 70%;
+  width: 40%;
   min-width: 300px;
 }
 .buttons {
@@ -703,14 +703,14 @@ input.invalid {
   margin-top: 2em;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   position: relative;
-  width: 350px;
+  width: 500px;
 }
 
 .select-text {
   position: relative;
   font-family: inherit;
   background-color: transparent;
-  width: 350px;
+  width: 500px;
   padding: 10px 10px 10px 0;
   font-size: 18px;
   border-radius: 0;
@@ -770,7 +770,7 @@ input.invalid {
 .select-bar {
   position: relative;
   display: block;
-  width: 350px;
+  width: 500px;
 }
 
 .select-bar:before,
