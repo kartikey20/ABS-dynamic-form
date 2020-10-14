@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--     import stylesheet-->
+    <link rel="stylesheet" href="./index.css" />
+    <!--Import Google Icon Font-->
+  </head>
+  <body>
+    <form id="regForm" action="/action_page.php">
+      <h1>Register:</h1>
+      <!-- One "tab" for each step in the form: -->
+      <div class="tab">
+        <label class="pure-material-textfield-outlined">
+          <input placeholder=" " />
+          <span>Number of People</span>
+        </label>
+      </div>
+      <div class="tab">
+        <div class="appendContainer">
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " />
+            <span>Name</span> </label
+          ><label class="pure-material-textfield-outlined">
+            <input placeholder=" " />
+            <span>Family Name</span>
+          </label>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Prefer not to say</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label">Gender</label>
+          </div>
+          <div class="datepicker">
+            <div><label for="dateofbirth">Date Of Birth</label></div>
+            <input type="date" name="dateofbirth" id="dateofbirth" />
+          </div>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Australia</option>
+              <option value="2">New Zealand</option>
+              <option value="3">Fiji</option>
+              <option value="4">Solomon Islands</option>
+              <option value="5">Paupa New Guinea</option>
+              <option value="6">Philippines</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label">Country of Birth</label>
+          </div>
+          <div class="datepicker">
+            <div>
+              <label for="dateofbirth"
+                >In what year did you arrive in Austrialia</label
+              >
+            </div>
+            <input type="date" name="dateofbirth" id="dateofbirth" />
+          </div>
+          <div>
+            <p>Are you a Australian Citizen</p>
+            <label class="pure-material-radio">
+              <input type="radio" name="group" />
+              <span>Yes</span>
+            </label>
+            <label class="pure-material-radio">
+              <input type="radio" name="group" />
+              <span>No</span>
+            </label>
+          </div>
+          <div>
+            <p>Do you speak a language other than English?</p>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>English Only</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>Mandarin</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>Italian</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>Arabic</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>Cantonese</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>Greek</span>
+              </label>
+            </div>
+          </div>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Very Well</option>
+              <option value="2">Well</option>
+              <option value="3">Not Well</option>
+              <option value="4">Not at All Islands</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label">How well do you Engish?</label>
+          </div>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="0">Did not go to high school</option>
+              <option value="1">Year 7</option>
+              <option value="2">Year 8</option>
+              <option value="3">Year 9</option>
+              <option value="4">Year 10</option>
+              <option value="5">Year 11</option>
+              <option value="6">Year 12</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label style="margin-bottom: 2em" class="select-label"
+              >What is the highest year of sencondary school the person has
+              completed?</label
+            >
+          </div>
+          <div class="select">
+            <select class="select-text" required>
+              <option value="" disabled selected></option>
+              <option value="1">Trade Certificae</option>
+              <option value="2">Cert l</option>
+              <option value="3">Cert ll</option>
+              <option value="4">Cert ll</option>
+              <option value="5">Cert lll</option>
+              <option value="6">Cert lV</option>
+            </select>
+            <span class="select-highlight"></span>
+            <span class="select-bar"></span>
+            <label class="select-label"
+              >What is the highest qualification you have received?</label
+            >
+          </div>
+          <br />
+          <label class="pure-material-textfield-outlined">
+            <input placeholder=" " />
+            <span
+              >What is the main field of study of your highest
+              qualification?</span
+            >
+          </label>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Detached House</option>
+            <option value="2">Semi-detached House</option>
+            <option value="3">Apartment Retirement village</option>
+            <option value="4">Caravan</option>
+            <option value="5">Houseboat</option>
+            <option value="6">Boat</option>
+            <option value="6">Tent</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label">Type of Dwelling?</label>
+        </div>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Owned outright</option>
+            <option value="2">Owned with Mortage</option>
+            <option value="3">Rented</option>
+            <option value="4">Rent-free</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label">Is this Dwelling?</label>
+        </div>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Mains electricity</option>
+            <option value="2">Photovoltaic Panels</option>
+            <option value="3">Battery Gas</option>
+            <option value="4">No power source</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label"
+            >Sources of energy for the Dwelling?</label
+          >
+        </div>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">fibre to the house</option>
+            <option value="2">fibre to the curb</option>
+            <option value="3">fibre to the node</option>
+            <option value="4">fixed wireless</option>
+            <option value="4">ADSL</option>
+            <option value="4">No Internet</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label">Internet Access for the Dwelling?</label>
+        </div>
+        <br />
+        <label class="pure-material-textfield-outlined">
+          <input placeholder=" " />
+          <span>Average montly internet download?(in GB)</span>
+        </label>
+
+        <div>
+          <p>Are there any electric vehicles garaged at the Dwelling?</p>
+          <div>
+            <p>Are you a Australian Citizen</p>
+            <label class="pure-material-radio">
+              <input type="radio" name="group" onclick="" />
+              <span>Yes</span>
+            </label>
+            <label class="pure-material-radio">
+              <input type="radio" name="group" />
+              <span>No</span>
+            </label>
+          </div>
+          <div class="electric-cars">
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>hybrid-car</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>suv</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>hybrid suv</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>truck</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>hybrid truck</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>scooter</span>
+              </label>
+            </div>
+            <div>
+              <label class="pure-material-checkbox">
+                <input type="checkbox" />
+                <span>motorcycle</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <label class="pure-material-textfield-outlined">
+          <input placeholder=" " />
+          <span>contact number</span>
+        </label>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Very Hard</option>
+            <option value="2">Hard</option>
+            <option value="3">OK</option>
+            <option value="4">Easy</option>
+            <option value="4">Vey Easy</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label"
+            >How difficult was this questionaire to navigate?</label
+          >
+        </div>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Very confusing</option>
+            <option value="2">confusing</option>
+            <option value="3">OK</option>
+            <option value="4">Clear</option>
+            <option value="4">Vey Clear</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label"
+            >Where the input requirement of each question easy to follow?</label
+          >
+        </div>
+        <div class="select">
+          <select class="select-text" required>
+            <option value="" disabled selected></option>
+            <option value="1">Yes</option>
+            <option value="2">No, Did not use it</option>
+          </select>
+          <span class="select-highlight"></span>
+          <span class="select-bar"></span>
+          <label class="select-label">Did you find the help useful?</label>
+        </div>
+      </div>
+      <div class="buttons" style="float: right">
+        <button
+          type="button"
+          id="prevBtn"
+          onclick="nextPrev(-1)"
+          class="pure-material-button-contained"
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          id="nextBtn"
+          onclick="nextPrev(1)"
+          class="pure-material-button-contained"
+        >
+          Next
+        </button>
+      </div>
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align: center; margin-top: 40px">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
