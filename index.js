@@ -1,6 +1,35 @@
-var currentTab = 0;
-var texInputValue;// Current tab is set to be the first tab (0)
+var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab);
+
+//clone tabs according to number of people
+
+$('#n_people').on('change', function () {
+    var noi = $(this).val();
+    var e = $(`#tab3`);
+    $(`#tab3:gt(0)`).remove();
+    //var present = e.length;
+    for (var i = 0; i < (noi - 1); i++) {
+        e.clone().insertAfter(e);
+    }
+}).trigger('change');
+$('#n_people').on('change', function () {
+    var noi = $(this).val();
+    var e = $(`#tab2`);
+    $(`#tab2:gt(0)`).remove();
+    //var present = e.length;
+    for (var i = 0; i < (noi - 1); i++) {
+        e.clone().insertAfter(e);
+    }
+}).trigger('change');
+$('#n_people').on('change', function () {
+    var noi = $(this).val();
+    var e = $(`#tab1`);
+    $(`#tab1:gt(0)`).remove();
+    //var present = e.length;
+    for (var i = 0; i < (noi - 1); i++) {
+        e.clone().insertAfter(e);
+    }
+}).trigger('change');
 
 // Display the current tab
 
@@ -34,17 +63,7 @@ function nextPrev(n) {
     x[currentTab].style.display = "none";
     // Increase or decrease the current tab by 1:
     currentTab = currentTab + n;
-    if(currentTab>0){
-        $('#n_people').on('change', function () {
-            var noi = $(this).val();
-            var e = $(`#tab${currentTab}`);
-            $(`#tab${currentTab}:gt(0)`).remove();
-            //var present = e.length;
-            for (var i = 0; i < (noi - 1); i++) {
-                e.clone().insertAfter(e);
-            }
-        }).trigger('change');
-    }
+
     // if you have reached the end of the form... :
     if (currentTab >= x.length) {
         //...the form gets submitted:
