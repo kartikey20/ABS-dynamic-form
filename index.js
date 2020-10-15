@@ -80,6 +80,7 @@ function validateForm() {
     n = document.getElementById('n_people').value;
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
+
     if (isNaN(n)) {
         return false;
     }

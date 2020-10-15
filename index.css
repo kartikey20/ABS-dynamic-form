@@ -4,30 +4,36 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #fcd6b5;
 }
-
+/*logo*/
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  width: 50%;
+}
+/*form*/
 #regForm {
-  background-color: #ffffff;
+  background-color: #fac08e;
   margin: 100px auto;
   font-family: "Roboto", sans-serif;
   padding: 40px;
   width: 40%;
   min-width: 300px;
+  border-radius: 2em;
 }
+/*adjust button margin*/
 .buttons {
   margin: 1em;
 }
 .buttons button {
   margin-left: 1em;
 }
+
 h1 {
   text-align: center;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
 }
 
 /* Hide all steps by default: */
@@ -40,6 +46,7 @@ input.invalid {
 }
 
 /* Make circles that indicate the steps of the form: */
+
 .step {
   height: 15px;
   width: 15px;
@@ -57,7 +64,7 @@ input.invalid {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #4caf50;
+  background-color: #000000;
 }
 /* electric cars section */
 .electric-cars {
