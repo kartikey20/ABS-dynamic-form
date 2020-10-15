@@ -8,7 +8,7 @@ body {
   overflow-x: hidden;
 }
 /*logo*/
-.logo{
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -40,7 +40,10 @@ h1 {
 .tab {
   display: none;
 }
-
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+}
 #prevBtn {
   background-color: #bbbbbb;
 }
@@ -821,7 +824,6 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 1.5em 0;
-
 }
 #dateofbirth #year {
   margin-top: 1em;
@@ -849,9 +851,8 @@ h1 {
   #regForm {
     width: 100%;
     padding: 10px;
-
   }
-  .n_people{
+  .n_people {
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -859,7 +860,9 @@ h1 {
     width: 5px;
     height: 5px;
   }
-  .select,.select-bar,.select-text{
+  .select,
+  .select-bar,
+  .select-text {
     width: 400px;
   }
 }
