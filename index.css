@@ -5,6 +5,7 @@
 
 body {
   background-color: #fcd6b5;
+  overflow-x: hidden;
 }
 /*logo*/
 .logo{
