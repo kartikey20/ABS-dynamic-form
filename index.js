@@ -1,5 +1,11 @@
-var currentTab = 0; // Current tab is set to be the first tab (0)
+var currentTab = 0;
+// Current tab is set to be the first tab (0)
+$(".tooltips").append("<span></span>");
+$(".tooltips:not([tooltip-position])").attr("tooltip-position", "bottom");
 
+$(".tooltips").mouseenter(function () {
+  $(this).find("span").empty().append($(this).attr("tooltip"));
+});
 //clone tabs according to number of people
 
 $("#n_people")
@@ -48,8 +54,8 @@ function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab"); // Hide the current tab:
   // Exit the function if any field in the current tab is invalid:
-  /*   if (n == 1 && !validateForm()) return false;
-   */ x[currentTab].style.display = "none";
+  if (n == 1 && !validateForm()) return false;
+  x[currentTab].style.display = "none";
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
   // if you have reached the end of the form... :

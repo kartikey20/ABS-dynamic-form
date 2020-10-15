@@ -37,21 +37,99 @@ body {
 h1 {
   text-align: center;
 }
-.pure-material-radio > input.invalid + span::before {
-  border: solid 2px red;
-}
-.tooltip {
+
+/* tooltip styling*/
+
+.tooltips {
   margin-left: 1em;
   vertical-align: 65%;
   position: relative;
+  position: relative;
+  display: inline;
 }
-.tooltip-middle {
+.tooltips span {
+  font: 300 12px "Open Sans", sans-serif;
+  position: absolute;
+  color: #ffffff;
+  background: #000000;
+  padding: 5px 10px;
+  width: 140px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: transform 0.3s, opacity 0.6s, margin-left 0.2s, margin-top 0.2s;
+}
+
+.tooltips > span img {
+  max-width: 140px;
+}
+
+.tooltips[tooltip-position="right"] span {
+  margin-top: 30px;
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.tooltips span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.tooltips[tooltip-position="right"] span:after {
+  top: 50%;
+  right: 100%;
+  margin-top: -8px;
+  border-right: 8px solid black;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.tooltips:hover span {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  filter: alpha(opacity=100);
+}
+
+.tooltips[tooltip-position="right"]:hover span {
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 15px;
+}
+
+.tooltips[tooltip-type="primary"] > span {
+  background-color: #2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="top"] > span:after {
+  border-top: 8px solid #2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="bottom"] > span:after {
+  border-bottom: 8px solid #2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="left"] > span:after {
+  border-left: 8px solid #2980b9;
+}
+
+.tooltips[tooltip-type="primary"][tooltip-position="right"] > span:after {
+  border-right: 8px solid #2980b9;
+}
+
+.tooltips-middle {
   vertical-align: middle;
   margin-left: 1em;
 }
-.para {
-  margin-bottom: 1em;
-}
+
 /*  input invalid indicator*/
 
 .pure-material-textfield-outlined > input.invalid,
@@ -878,8 +956,8 @@ h1 {
     padding: 10px;
   }
   .n_people {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
   .step {
     width: 5px;
