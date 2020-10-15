@@ -49,7 +49,9 @@ h1 {
   vertical-align: middle;
   margin-left: 1em;
 }
-
+.para {
+  margin-bottom: 1em;
+}
 /*  input invalid indicator*/
 
 .pure-material-textfield-outlined > input.invalid,
