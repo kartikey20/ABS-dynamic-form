@@ -848,8 +848,8 @@ h1 {
     width: 100%;
   }
   .step {
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
   }
   .select,.select-bar,.select-text{
     width: 400px;
