@@ -11,14 +11,12 @@ $(".tooltips").mouseenter(function () {
 $("#n_people")
   .on("change", function () {
     var noi = $(this).val();
-    var e1 = $("#tab_1");
-    var e2 = $("#tab_2");
-    var e3 = $("#tab_3");
+    var e = $("#tab_1");
 
     $(`#tab_1:gt(0)`).remove();
     //var present = e.length;
     for (var i = 0; i < noi - 1; i++) {
-      e1.clone().insertAfter(e1);
+      e.clone().insertAfter(e);
     }
   })
   .trigger("change");
