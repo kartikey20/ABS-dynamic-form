@@ -219,7 +219,7 @@
                 <p>Are there any electric vehicles garaged at the Dwelling?</p>
                 <div>
                     <label class="pure-material-radio">
-                        <input type="radio" name="group" onclick=""/>
+                        <input type="radio" name="group" onclick="togglesDiv()"/>
                         <span>Yes</span>
                     </label>
                     <label class="pure-material-radio">
@@ -227,7 +227,8 @@
                         <span>No</span>
                     </label>
                 </div>
-                <div class="electric-cars">
+                <br>
+                <div id='electric' style="display: none;" class="electric-cars">
                     <div>
                         <label class="pure-material-checkbox">
                             <input type="checkbox"/>
