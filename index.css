@@ -848,6 +848,10 @@ h1 {
     padding: 10px;
 
   }
+  .n_people{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .step {
     width: 10px;
     height: 10px;
