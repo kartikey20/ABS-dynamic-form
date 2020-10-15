@@ -17,8 +17,7 @@ $('#n_people').on('change', function () {
     var e = $(`#tab2`);
     $(`#tab2:gt(0)`).remove();
     //var present = e.length;
-    for (var i = 0; i < (noi - 1); i++) {
-        e.clone().insertAfter(e);
+    for (var i = 0; i < (noi - 1); i++) {e.clone().insertAfter(e);
     }
 }).trigger('change');
 $('#n_people').on('change', function () {
@@ -58,7 +57,9 @@ function nextPrev(n) {
     // This function will figure out which tab to display
     var x = document.getElementsByClassName("tab");
     // Exit the function if any field in the current tab is invalid:
+/*
     if (n == 1 && !validateForm()) return false;
+*/
     // Hide the current tab:
     x[currentTab].style.display = "none";
     // Increase or decrease the current tab by 1:
@@ -77,9 +78,13 @@ function nextPrev(n) {
 
 function validateForm() {
     // This function deals with validation of the form fields
-    var x, y, i, valid = true;
+    var x, y, i, n, valid = true;
+    n = document.getElementById('n_people').value;
     x = document.getElementsByClassName("tab");
     y = x[currentTab].getElementsByTagName("input");
+    if (isNaN(n)) {
+        return false;
+    }
     // A loop that checks every input field in the current tab:
     for (i = 0; i < y.length; i++) {
         // If a field is empty...
