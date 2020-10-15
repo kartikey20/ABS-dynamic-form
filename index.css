@@ -6,8 +6,11 @@
 body {
   background-color: #fcd6b5;
   overflow-x: hidden;
+  counter-reset: mycounter;
 }
+
 /*logo*/
+
 .logo {
   display: block;
   margin-left: auto;
