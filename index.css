@@ -24,7 +24,9 @@ body {
   width: 40%;
   border-radius: 2em;
 }
+
 /*adjust button margin*/
+
 .buttons {
   margin: 1em;
 }
@@ -36,14 +38,22 @@ h1 {
   text-align: center;
 }
 
+/*  input invalid indicator*/
+
+.pure-material-textfield-outlined > input.invalid,
+.pure-material-textfield-outlined > input.invalid + span::before,
+.pure-material-textfield-outlined
+  > input.invalid:not(:focus):placeholder-shown {
+  border-color: red;
+  border-top-color: red;
+}
+
 /* Hide all steps by default: */
+
 .tab {
   display: none;
 }
-.title {
-  text-align: center;
-  font-size: 1.2rem;
-}
+
 #prevBtn {
   background-color: #bbbbbb;
 }
