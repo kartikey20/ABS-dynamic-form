@@ -63,6 +63,18 @@ function nextPrev(n) {
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
+$(document).ready(function () {
+  $("#regForm").validate({
+    rules: {
+      select: {
+        required: true,
+      },
+    },
+    messages: {
+      select: "kdsfksfdk",
+    },
+  });
+});
 
 function validateForm() {
   // This function deals with validation of the form fields
