@@ -180,7 +180,7 @@ h2 {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #4caf50;
+  background-color: #333333;
 }
 /* electric cars section */
 .electric-cars {
