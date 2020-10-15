@@ -16,13 +16,9 @@ $("#n_people")
     var e3 = $("#tab_3");
 
     $(`#tab_1:gt(0)`).remove();
-    $(`#tab_2:gt(0)`).remove();
-    $(`#tab_3:gt(0)`).remove();
     //var present = e.length;
     for (var i = 0; i < noi - 1; i++) {
       e1.clone().insertAfter(e1);
-      e2.clone().insertAfter(e2);
-      e3.clone().insertAfter(e3);
     }
   })
   .trigger("change");
