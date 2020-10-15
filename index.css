@@ -21,7 +21,6 @@ body {
   font-family: "Roboto", sans-serif;
   padding: 40px;
   width: 40%;
-  min-width: 300px;
   border-radius: 2em;
 }
 /*adjust button margin*/
@@ -846,6 +845,8 @@ h1 {
 @media screen and (max-width: 600px) {
   #regForm {
     width: 100%;
+    padding: 10px;
+
   }
   .step {
     width: 10px;
