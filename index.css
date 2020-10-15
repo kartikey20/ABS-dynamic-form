@@ -6,9 +6,12 @@
 body {
   background-color: #fcd6b5;
   overflow-x: hidden;
-  counter-reset: mycounter;
+  counter-reset: mycounter 0;
 }
-
+.title h2::before {
+  content: "Chapter" counter(mycounter) ":";
+  counter-increment: mycounter 1;
+}
 /*logo*/
 
 .logo {
@@ -24,7 +27,7 @@ body {
   margin: 100px auto;
   font-family: "Roboto", sans-serif;
   padding: 40px;
-  width: 40%;
+  width: 50%;
   border-radius: 2em;
 }
 
@@ -37,8 +40,13 @@ body {
   margin-left: 1em;
 }
 
-h1 {
+.title_text,
+.title_centre,
+h2 {
   text-align: center;
+}
+.title_text {
+  font-size: larger;
 }
 
 /* tooltip styling*/
@@ -159,7 +167,7 @@ h1 {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbbbbb;
+  background-color: #000000;
   border: none;
   border-radius: 50%;
   display: inline-block;
@@ -172,7 +180,7 @@ h1 {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #000000;
+  background-color: #4caf50;
 }
 /* electric cars section */
 .electric-cars {

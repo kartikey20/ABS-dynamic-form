@@ -1,29 +1,35 @@
-var currentTab = 0;
-// Current tab is set to be the first tab (0)
+var currentTab = 0; // Current tab is set to be the first tab (0)
+
+/* tooltip */
+
 $(".tooltips").append("<span></span>");
 $(".tooltips:not([tooltip-position])").attr("tooltip-position", "bottom");
 
 $(".tooltips").mouseenter(function () {
   $(this).find("span").empty().append($(this).attr("tooltip"));
 });
+
 //clone tabs according to number of people
 
 $("#n_people")
   .on("change", function () {
     var noi = $(this).val();
     var e = $("#tab_1");
-
+    var elm = '<span class="step"' + "</span>";
     $(`#tab_1:gt(0)`).remove();
     //var present = e.length;
-    for (var i = 0; i < noi - 1; i++) {
-      e.clone().insertAfter(e);
+    for (var i = 1; i < noi; i++) {
+      e.clone(true)
+        .find(".title_text")
+        .text(`Person ${i}`)
+        .end()
+        .insertBefore(e);
+      $("#progress-bar").append(elm);
     }
   })
   .trigger("change");
 
-showTab(currentTab);
-
-// Display the current tab
+showTab(currentTab); // Display the current tab
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
@@ -58,7 +64,9 @@ function nextPrev(n) {
     document.getElementById("regForm").submit();
     return false;
   }
-
+  document.getElementsByClassName(
+    "title_text"
+  ).innerHTML = `New text!${currentTab}`;
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
@@ -73,6 +81,8 @@ function validateForm() {
   n = document.getElementById("n_people").value;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
+
+  // Exit the function if input is not a interger
 
   if (isNaN(n)) {
     return false;
@@ -93,7 +103,6 @@ function validateForm() {
   }
   return valid; // return the valid status
 }
-
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   var i,
@@ -101,6 +110,6 @@ function fixStepIndicator(n) {
   for (i = 0; i < x.length; i++) {
     x[i].className = x[i].className.replace(" active", "");
   }
-  //... and adds the "active" class to the current step:
+  //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
