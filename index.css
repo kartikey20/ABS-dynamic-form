@@ -11,12 +11,7 @@ body {
 
 /* title heading*/
 
-̥ .title_text,
-.title_centre,
-h2 {
-  text-align: center;
-}
-.title_text {
+̥ .title_text {
   font-size: larger;
 }
 
@@ -170,7 +165,7 @@ h2 {
   border: none;
   border-radius: 50%;
   display: inline-block;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .step.active {
@@ -179,7 +174,7 @@ h2 {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #333333;
+  background-color: #4b4b4b;
 }
 /* electric cars section */
 .electric-cars {
@@ -507,6 +502,7 @@ h2 {
 }
 
 /* Active */
+
 .pure-material-button-contained:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
@@ -842,12 +838,14 @@ h2 {
 }
 
 /* Remove focus */
+
 .select-text:focus {
   outline: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
 /* Use custom arrow */
+
 .select .select-text {
   appearance: none;
   -webkit-appearance: none;
@@ -869,6 +867,7 @@ h2 {
 }
 
 /* LABEL ======================================= */
+
 .select-label {
   color: rgba(0, 0, 0, 0.26);
   font-size: 16px;
@@ -881,6 +880,7 @@ h2 {
 }
 
 /* active state */
+
 .select-text:focus ~ .select-label,
 .select-text:valid ~ .select-label {
   color: #2f80ed;
@@ -934,6 +934,7 @@ h2 {
 }
 
 /* date picker */
+
 .datepicker {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
