@@ -8,10 +8,16 @@ body {
   overflow-x: hidden;
   counter-reset: mycounter 0;
 }
-.title h2::before {
-  content: "Chapter" counter(mycounter) ":";
-  counter-increment: mycounter 1;
+/* title heading*/
+̥ .title_text,
+.title_centre,
+h2 {
+  text-align: center;
 }
+.title_text {
+  font-size: larger;
+}
+
 /*logo*/
 
 .logo {
@@ -38,15 +44,6 @@ body {
 }
 .buttons button {
   margin-left: 1em;
-}
-
-.title_text,
-.title_centre,
-h2 {
-  text-align: center;
-}
-.title_text {
-  font-size: larger;
 }
 
 /* tooltip styling*/
