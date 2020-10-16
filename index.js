@@ -1,5 +1,10 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 
+$(document).on("input", "#n_people", function () {
+  var coins = $("#n_people").val();
+  $(".title_text").text(`Person ${coins}`);
+});
+
 /* tooltip */
 
 $(".tooltips").append("<span></span>");
