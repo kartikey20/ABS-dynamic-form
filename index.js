@@ -1,5 +1,7 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 
+/* Add default value to person*/
+
 $(document).on("input", "#n_people", function () {
   var coins = $("#n_people").val();
   $(".title_text").text(`Person ${coins}`);
