@@ -8,7 +8,9 @@ body {
   overflow-x: hidden;
   counter-reset: mycounter 0;
 }
+
 /* title heading*/
+
 ̥ .title_text,
 .title_centre,
 h2 {
@@ -27,7 +29,9 @@ h2 {
   margin-bottom: 2em;
   width: 50%;
 }
+
 /*form*/
+
 #regForm {
   background-color: #fac08e;
   margin: 100px auto;
@@ -45,7 +49,9 @@ h2 {
 .buttons button {
   margin-left: 1em;
 }
-
+#prevBtn {
+  background-color: #bbbbbb;
+}
 /* tooltip styling*/
 
 .tooltips {
@@ -152,10 +158,6 @@ h2 {
 
 .tab {
   display: none;
-}
-
-#prevBtn {
-  background-color: #bbbbbb;
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -888,6 +890,7 @@ h2 {
 }
 
 /* BOTTOM BARS ================================= */
+
 .select-bar {
   position: relative;
   display: block;
@@ -939,7 +942,13 @@ h2 {
 #dateofbirth #year {
   margin-top: 1em;
 }
-
+input.invalid {
+  color: red;
+  border-color: red;
+}
+input.invalid label {
+  background-color: red;
+}
 [type="date"] {
   margin-top: 1em;
   font-family: "Roboto", sans-serif;

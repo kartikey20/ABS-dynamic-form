@@ -302,7 +302,12 @@
             </g></svg
         ></span>
         <div class="select">
-          <select name="select" class="select-text" required>
+          <select
+            oninput="this.className = ''"
+            name="select"
+            class="select-text"
+            required
+          >
             <option value="" disabled selected></option>
             <option value="1">Male</option>
             <option value="2">Female</option>
