@@ -985,4 +985,7 @@ input.invalid label {
   .select-text {
     width: 400px;
   }
+  .select-label {
+    color: red;
+  }
 }

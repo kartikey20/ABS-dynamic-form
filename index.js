@@ -91,15 +91,17 @@ function nextPrev(n) {
 
 function validateForm() {
   // This function deals with validation of the form fields
-  var x,
-    y,
-    i,
-    n,
-    valid = true;
+  var x, y, i, n, d;
+  valid = true;
   n = document.getElementById("n_people").value;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
-
+  d = document.getElementsByClassName("select-text");
+  var optionSelIndex = d.options[e.selectedIndex].value;
+ if(d!=null){
+   if(){}
+   
+ }
   // Exit the function if input is not a interger
 
   if (isNaN(n)) {
